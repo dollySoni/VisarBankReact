@@ -7,6 +7,7 @@ import Headers from './components/Header';
 import Login from './components/Login';
 import NavBar from './components/NavBar';
 import Dashboard from './components/Pages/Dashboard';
+import AddEmailTemplate from './components/AddEmailTemplate';
 import Logout from './components/Logout';
 import Staff from './components/Pages/Staff/Staff';
 
@@ -44,28 +45,13 @@ function App() {
                 <Router>
                   <Route exact path='/logout' component={Logout} />
                 </Router>
-                </div>
-                
-                
-                <div>
                   <Router>
-                    <div>
-                      <Route exact path='/create' component={Create} />
-                    </div>
-                    <div style={{ marginTop: 20 }}>
-                      <Route exact path='/read' component={Read} />
-                    </div>
-                    <div style={{ marginTop: 20 }}>
-                      <Route exact path='/update' component={Update} />
-                    </div>
-
-                  </Router>
-                  <div>
-
-                  </div>
-
+                  <Route exact path='/AddEmailTemplate' component={AddEmailTemplate} />
+                </Router>
                 </div>
-              </div>
+                
+                
+               
               </>
         )
           }
